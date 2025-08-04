@@ -10,6 +10,7 @@ struct AuthView: View {
     
     @Environment (\.managedObjectContext) var managedObjectContext
     
+    @State private var name: String = ""
     var body: some View {
         Text("la")
     }
