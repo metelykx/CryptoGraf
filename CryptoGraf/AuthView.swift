@@ -7,6 +7,9 @@
 import SwiftUI
 
 struct AuthView: View {
+    
+    @Environment (\.managedObjectContext) var managedObjectContext
+    
     var body: some View {
         Text("la")
     }
