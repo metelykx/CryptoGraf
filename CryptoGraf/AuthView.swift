@@ -8,13 +8,16 @@ import SwiftUI
 
 struct AuthView: View {
     
-    @Environment (\.managedObjectContext) var managedObjectContext
+    @Environment(\.managedObjectContext) var managedObjectContext
     
     @State private var name: String = ""
     @State private var password: String = ""
     @State private var repeatPassword: String = ""
+    
     var body: some View {
-        Text("la")
+        TextField("Name", text: $name)
+        TextField("Password", text: $password)
+        TextField("Repeat Password", text: $repeatPassword)
     }
 }
 
